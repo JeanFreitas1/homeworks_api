@@ -6,8 +6,8 @@ Hi, my name is Jean, I'm 27 years old and I'm an engineering student with a pass
 
 ## What libraries am I using in this project?
 
-> Docker for Postgres DB
-> Express
-> Sequelize
-> Bcrypt
-> Jsonwebtoken
+> - Docker for Postgres DB
+> - Express
+> - Sequelize
+> - Bcrypt
+> - Jsonwebtoken
