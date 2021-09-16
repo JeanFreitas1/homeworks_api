@@ -11,3 +11,4 @@ Hi, my name is Jean, I'm 27 years old and I'm an engineering student with a pass
 - Sequelize
 - Bcrypt
 - Jsonwebtoken
+- Morgan

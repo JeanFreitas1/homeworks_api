@@ -8,4 +8,13 @@ services:
     environment:
       POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
     ports:
-      - ${DB_PORT:-5440}:5432
+      - ${DB_PORT:-5434}:5432
+  postgres-test:
+    image: postgres:13
+    container_name: homeworks-test-db
+    env_file:
+      - .env
+    environment:
+      POSTGRES_PASSWORD: ${DB_TEST_PASSWORD:-postgres}
+    ports:
+      - ${DB_PORT:-5435}:5432
