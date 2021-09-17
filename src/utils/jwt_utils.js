@@ -4,11 +4,11 @@ import environment from '../config/environment';
 
 export default class JWTUtils {
   static generateAccessToken(payload, options = {}) {
-    const { expiresIn = 60 * 5 } = options; // 5min
+    const { expiresIn = 60 * 60 } = options; // 1h
     return jwt.sign(payload, environment.jwtAccessTokenSecret, { expiresIn });
   }
   static generateRefreshToken(payload, options = {}) {
-    const { expiresIn = 60 * 60 } = options; // 1h
+    const { expiresIn = '14d' } = options; // 14d
     return jwt.sign(payload, environment.jwtRefreshTokenSecret, { expiresIn });
   }
   static verifyAccessToken(accessToken) {
