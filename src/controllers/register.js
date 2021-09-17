@@ -18,11 +18,20 @@ export default async function register(req, res) {
       .status(400)
       .json({ success: false, message: 'User already exists' });
   }
-
+  // validating username
   if (EmailValidator.isValidEmail(username)) {
     return res
       .status(400)
-      .json({ success: false, message: "Your username can't be your email" });
+      .json({
+        success: false,
+        message: "Your username can't be a email format",
+      });
+  }
+  //validating email
+  if (!EmailValidator.isValidEmail(email)) {
+    return res
+      .status(400)
+      .json({ success: false, message: 'Your email is invalid' });
   }
 
   const payload = { email };

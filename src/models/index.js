@@ -12,7 +12,6 @@ export function registerModels(sequelize) {
 
   for (const file of filteredModelFiles) {
     const model = require(path.join(__dirname, file)).default(sequelize);
-    console.log(model);
     models[model.name] = model;
   }
 

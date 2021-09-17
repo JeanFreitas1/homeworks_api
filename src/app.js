@@ -7,7 +7,7 @@ import helmet from 'helmet';
 import cors from 'cors';
 import xss from 'xss-clean';
 import rateLimiter from 'express-rate-limit';
-require('express-async-errors');
+import 'express-async-errors';
 
 export default class App {
   constructor() {
