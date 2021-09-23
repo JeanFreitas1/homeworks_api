@@ -7,6 +7,7 @@ export default (sequelize) => {
     static associate(models) {
       User.RefreshToken = User.hasOne(models.RefreshToken);
       User.Roles = User.hasMany(models.Role);
+      User.Files = User.hasMany(models.File);
     }
 
     static async hashPassword(password) {

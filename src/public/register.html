@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Homeworks Storage API</title>
+  </head>
+
+  <body>
+    <div class="infront">
+      <h3 class="upload-info"></h3>
+      <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+    </div>
+
+    <main>
+      <div class="title nobg">
+        <!-- <h4>Arquivos</h4> -->
+        <a class="btn-inverse btn-left-menu" href="/">Voltar</a>
+
+        <button
+          class="btn btn-logout btn-right-menu"
+          onclick="return logoutbtn()"
+        >
+          Logout
+        </button>
+      </div>
+      <form class="form contact-form register-form">
+        <h5>Register</h5>
+
+        <div class="form-row">
+          <label for="firstname" class="form-label">firstname</label>
+          <input type="text" class="form-input firstname-input" minlength="3" />
+        </div>
+
+        <div class="form-row">
+          <label for="secondname" class="form-label">secondname</label>
+          <input
+            type="text"
+            class="form-input secondname-input"
+            minlength="3"
+          />
+        </div>
+
+        <div class="form-row">
+          <label for="username" class="form-label">username</label>
+          <input type="text" class="form-input username-input" minlength="2" />
+        </div>
+        <div class="form-row">
+          <label for="email" class="form-label">email</label>
+          <input type="email" class="form-input email-input" />
+        </div>
+        <div class="form-row">
+          <label for="password" class="form-label">password</label>
+          <input
+            type="password"
+            class="form-input password-input"
+            autocomplete="new-password"
+          />
+        </div>
+        <div class="text-small form-alert">there was an error</div>
+        <button type="submit" class="btn btn-block">submit</button>
+      </form>
+    </main>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./js/clientAppRegister.js"></script>
+</html>

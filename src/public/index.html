@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Homeworks Storage API</title>
+  </head>
+
+  <body>
+    <div class="infront">
+      <h3 class="upload-info"></h3>
+      <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+    </div>
+
+    <main>
+      <form class="form contact-form login-form">
+        <h5>Login</h5>
+        <div class="form-row">
+          <label for="username" class="form-label">E-mail or Username</label>
+          <input type="text" class="form-input username-input" />
+        </div>
+        <div class="form-row">
+          <label for="password" class="form-label">password</label>
+          <input type="password" class="form-input password-input" />
+        </div>
+        <div class="text-small form-alert">there was an error</div>
+        <button type="submit" class="btn btn-block">submit</button>
+      </form>
+
+      <div class="container allfiles">
+        <div class="title nobg">
+          <label for="file-select" class="btn-left-menu btn-inverse btn-logout"
+            >Select</label
+          >
+          <input type="file" id="file-select" style="display: none" />
+          <button
+            class="btn-inverse btn-logout btn-middle-menu"
+            onclick="return uploadbtn()"
+          >
+            Upload
+          </button>
+
+          <a class="btn btn-logout btn-middle-menu" href="/register.html"
+            >Register</a
+          >
+          <!-- <h4>Arquivos</h4> -->
+
+          <button
+            class="btn btn-logout btn-right-menu"
+            onclick="return logoutbtn()"
+          >
+            Logout
+          </button>
+        </div>
+        <!-- Todos arquivos aparecem aqui dentro -->
+        <div class="allfiles-class"></div>
+        <!--  ---------------------------------  -->
+      </div>
+
+      <!-- <div class="container upload">
+        <h4 class="title">Upload File</h4>
+        <div class="result">
+          <p>nomedoarquivo.jpg</p>
+          <i
+            onclick="return downloadbtn('Episódio - 03.mkv')"
+            class="fas fa-file-download"
+          ></i>
+          <i
+            onclick="return deletebtn('Episódio - 03.mkv')"
+            class="fas fa-trash-alt"
+          ></i>
+        </div>
+      </div> -->
+    </main>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./js/clientApp.js"></script>
+</html>
